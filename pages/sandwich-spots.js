@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout from "../../components/Layout";
+import Layout from "../components/Layout";
 import { neon } from '@neondatabase/serverless';
 
 export async function getServerSideProps() {
@@ -9,7 +9,7 @@ export async function getServerSideProps() {
   return { props: { data: response[0].version } };
 }
 
-export default function FirstPost({ props }) {
+export default function SandwichSpots({ props }) {
   return (
     <Layout>
       <Head>
