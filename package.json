@@ -7,13 +7,27 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
+    "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/postcss": "^4.0.4",
+    "amqplib": "^0.10.5",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "tailwind": "^4.0.0"
+    "shadcn": "^2.3.0",
+    "tailwind": "^4.0.0",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "typescript": "^5.7.3"
   }
 }
