@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Pique",
+      "address": "171 Lavender Hill",
+      "description": "Too sloppy",
+      "rating": 4,
+      "visitedDate": "2024-07-20"
+    },
+    {
+      "id": 2,
+      "name": "Delizie D'Italia",
+      "address": "77 Lupus St",
+      "description": "Best ones yet",
+      "rating": 9,
+      "visitedDate": "2024-07-22"
+    }
+  ]
