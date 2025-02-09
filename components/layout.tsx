@@ -3,11 +3,16 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
- 
+
 const name = 'Em Giblett';
 export const siteTitle = 'Next.js Sample Website';
- 
-export default function Layout({ children, home }) {
+
+interface LayoutProps {
+  children: React.ReactNode;
+  home?: boolean;
+}
+
+export default function Layout({ children, home }: LayoutProps) {
   return (
     <div className={styles.container}>
       <Head>
@@ -30,8 +35,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              src="/images/sandwich-04.svg"
               height={144}
               width={144}
               alt=""
@@ -43,8 +47,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
+                src="/images/sandwich-04.svg"
                 height={108}
                 width={108}
                 alt=""
@@ -52,7 +55,7 @@ export default function Layout({ children, home }) {
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>
-                {name}
+                The SanDibbo Tour
               </Link>
             </h2>
           </>
@@ -66,4 +69,4 @@ export default function Layout({ children, home }) {
       )}
     </div>
   );
-}
+} 

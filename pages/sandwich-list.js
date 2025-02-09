@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from "next/head";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import Layout from "../components/Layout";
 import { neon } from '@neondatabase/serverless';
 
@@ -51,7 +52,9 @@ export default function SandwichSpots() {
           ))}
         </div>
       </div>
-      <Link href="/add">Add a new sandwich spot</Link>
+      <Button variant="outline" asChild>
+        <Link href="/add">Add a new sandwich spot</Link>
+      </Button>
     </Layout>
   );
 }
