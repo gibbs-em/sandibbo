@@ -13,6 +13,13 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div className="min-h-screen bg-gray-100">
+        <div className="container mx-auto px-4 py-8">
+          <h1 className="text-4xl font-bold text-blue-600">
+            Hello Tailwind!
+          </h1>
+        </div>
+      </div>
       {/* Add test div with Tailwind classes */}
       <div className="bg-blue-500 p-4 m-4 rounded-lg text-white text-center">
         If this is blue with white text and padding, Tailwind is working!
