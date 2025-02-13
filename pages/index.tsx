@@ -21,12 +21,17 @@ export default function Home() {
           </p>
           <p>Our current top spot is...</p>
           <TopSpot />
-          <Button variant="outline" asChild>
-            <Link href="/sandwich-list">See the full list</Link>
-          </Button>
-          <Button variant="outline" asChild>
-            <Link href="/add">Add a new sandwich spot</Link>
-          </Button>
+          <div className="space-x-4">
+            <Button variant="outline" asChild>
+              <Link href="/sandwich-list">See the full list</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/add">Add a new sandwich spot</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/wishlist/add">Add to Wishlist</Link>
+            </Button>
+          </div>
         </section>
       </div>
     </Layout>
