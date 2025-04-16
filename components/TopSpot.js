@@ -29,7 +29,7 @@ export default function TopSpot() {
   if (!topSpot) return <div>No sandwich spots found</div>;
 
   return (
-    <div className="bg-yellow-50 p-6 rounded-lg shadow-md">
+    <div className="bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-2">🏆 Top Rated Spot</h2>
       <div className="space-y-2">
         <h3 className="text-xl font-semibold">{topSpot.name}</h3>

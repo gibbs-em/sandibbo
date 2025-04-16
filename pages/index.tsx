@@ -16,19 +16,21 @@ export default function Home() {
 
       <div className="max-w-4xl mx-auto p-4">
         <section className={utilStyles.headingMd}>
-          <p>
+          <p className="text-center">
             Dan and Gibbo's guide to the best sandwiches in the city
+            <span></span>
           </p>
-          <p>Our current top spot is...</p>
+          <p/>
+          <p className="text-center">Our current favourite is...</p>
           <TopSpot />
-          <div className="space-x-4">
-            <Button variant="outline" asChild>
+          <div className="flex flex-col md:flex-row md:justify-between gap-4 mt-4">
+            <Button className="bg-white font-chewy" variant="outline" asChild>
               <Link href="/sandwich-list">See the full list</Link>
             </Button>
-            <Button variant="outline" asChild>
+            <Button className="bg-white font-chewy" variant="outline" asChild>
               <Link href="/add">Add a new sandwich spot</Link>
             </Button>
-            <Button variant="outline" asChild>
+            <Button className="bg-white font-chewy" variant="outline" asChild>
               <Link href="/wishlist/add">Add to Wishlist</Link>
             </Button>
           </div>

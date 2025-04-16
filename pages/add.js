@@ -52,7 +52,7 @@ export default function AddSpot() {
       <Head>
         <title>Add New Sandwich Spot</title>
       </Head>
-      <h1 className="text-2xl font-bold mb-6">Add New Sandwich Spot</h1>
+      <h1 className="text-2xl font-chewy mb-6">Add New Sandwich Spot</h1>
       
       <form onSubmit={handleSubmit} className="max-w-md space-y-4">
         <div>

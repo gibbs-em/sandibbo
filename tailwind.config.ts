@@ -6,7 +6,14 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        chewy: ['Chewy', 'cursive'],
+      },
+      colors: {
+        background: '#FDF1E6',
+      },
+    },
   },
   plugins: [],
 }

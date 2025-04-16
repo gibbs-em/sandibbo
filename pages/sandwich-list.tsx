@@ -44,13 +44,16 @@ export default function SandwichSpots() {
       <Head>
         <title>All Sandwich Spots</title>
       </Head>
-      <h1>All Spots</h1>
-      <div className="flex flex-col md:flex-row container mx-auto px-4 py-8 gap-6">
+      <h1 className="font-chewy">All Spots</h1>
+      <div className="flex flex-col md:flex-row container mx-auto py-8 gap-6">
         <div className="md:w-1/2">
           <div className="grid grid-cols-1 gap-4">
             {spots.map((spot) => (
-              <div key={spot.id} className="border rounded-lg p-4 shadow-md">
-                <h2 className="text-xl font-semibold">{spot.name}</h2>
+              <div
+                key={spot.id}
+                className="border bg-white rounded-lg p-4 shadow-md"
+              >
+                <h2 className="text-xl font-chewy">{spot.name}</h2>
                 <p className="text-gray-600">{spot.address}</p>
                 {spot.description && (
                   <p className="mt-2 text-gray-700">{spot.description}</p>
@@ -59,13 +62,13 @@ export default function SandwichSpots() {
             ))}
           </div>
         </div>
-        <div className="md:w-1/2 sticky top-0">
+        <div className="md:w-1/2">
+          <Button className="w-full mb-4 bg-white font-chewy" variant="outline" asChild>
+            <Link href="/add">Add a new sandwich spot</Link>
+          </Button>
           {spots.length > 0 && <Map spots={spots} />}
         </div>
       </div>
-      <Button variant="outline" asChild>
-        <Link href="/add">Add a new sandwich spot</Link>
-      </Button>
     </Layout>
   );
 }
