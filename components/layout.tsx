@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Em Giblett';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'The Sandibbo Tour';
 
 interface LayoutProps {
   children: React.ReactNode;

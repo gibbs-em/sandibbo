@@ -17,7 +17,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto p-4">
         <section className={utilStyles.headingMd}>
           <p className="text-center">
-            Dan and Gibbo's guide to the best sandwiches in the city
+            Dan and Gibbo's guide to the best sandwiches in the city.
             <span></span>
           </p>
           <p/>
