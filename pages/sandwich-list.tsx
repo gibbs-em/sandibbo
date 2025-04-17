@@ -4,16 +4,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Layout from "../components/layout";
 import Map from "@/components/Map";
-import { neon } from "@neondatabase/serverless";
 import { SandwichSpot } from "@/types";
 
-export async function getServerSideProps() {
-  if (!process.env.DATABASE_URL) {
-    throw new Error("DATABASE_URL is not set");
-  }
-  const sql = neon(process.env.DATABASE_URL);
-  const response = await sql`SELECT version()`;
-  return { props: { data: response[0].version } };
+export async function getStaticProps() {
+  return {
+    props: {}
+  };
 }
 
 export default function SandwichSpots() {

@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import sql from '../../lib/db';
-import { WishlistItem } from '@/types';
 
 export default async function handler(
   req: NextApiRequest,
@@ -23,12 +22,12 @@ export default async function handler(
   if (req.method === 'POST') {
     try {
       const { name, address, suggester } = req.body;
-      const [result] = await sql<WishlistItem[]>`
+      const result = await sql`
         INSERT INTO wishlist (name, address, suggester)
         VALUES (${name}, ${address}, ${suggester})
-        RETURNING *
+        RETURNING id, name, address, suggester
       `;
-      return res.status(201).json(result);
+      return res.status(201).json(result[0]);
     } catch (error) {
       console.error('Database error:', error);
       return res.status(500).json({ message: 'Error adding to wishlist' });
